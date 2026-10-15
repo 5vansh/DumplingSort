@@ -43,7 +43,7 @@ code{display:block;background:#251f3a;color:#ffd86b;border-radius:8px;padding:4p
 </head>
 <body>
 <section class="top">
- <div id="stage" class="card"><a id="back" href="index.html" aria-label="Back to all sorting algorithms">&lsaquo; Back</a><span id="pill">Merge Sort</span>
+ <div id="stage" class="card"><a id="back" href="coverpage.html" aria-label="Back to menu">&lsaquo; Back</a><span id="pill">Merge Sort</span>
   <div id="legend"><span><i style="background:#f2d45c"></i>Compare</span><span><i style="background:#ee6aa0"></i>Taken to merge</span><span><i style="background:#6a45e8"></i>Active part</span><span><i style="background:#8fdca2"></i>Sorted (in place)</span></div></div>
  <div id="code" class="card"><div class="tabs"><b class="on" data-t="m">main.cpp</b><b data-t="v">viz.h (read-only)</b></div><pre id="src"></pre></div>
 </section>
@@ -221,7 +221,7 @@ function apply(){const v=$('#arr').value.split(/[\s,]+/).filter(Boolean).map(Num
 $('#apply').onclick=apply;$('#run').onclick=()=>{if(apply())setPlay(true)};
 $('#rc').onclick=()=>{$('#arr').value='6 3 8 1 5 2';apply()};
 $('#shuf').onclick=()=>{const n=Math.max(2,vals.length),p=[...Array(9).keys()].map(i=>i+1).sort(()=>Math.random()-.5).slice(0,Math.min(n,9));while(p.length<n)p.push(Math.ceil(Math.random()*9));$('#arr').value=p.join(' ');apply()};
-addEventListener('keydown',e=>{if(e.key==='Escape')location.href='index.html'});
+addEventListener('keydown',e=>{if(e.key==='Escape')location.href='coverpage.html'});
 showSrc(SRC);document.fonts.load("700 20px Fredoka").then(()=>apply(),()=>apply());
 </script>
 </body>
